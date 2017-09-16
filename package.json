@@ -1,0 +1,21 @@
+{
+  "name": "css-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "test",
+    "dev": "webpack-dev-server --progress --colors --watch",
+"start":"webpack && npm run dev"
+  },
+  "author": "Michal Cholewinski",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
