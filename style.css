@@ -1,7 +1,8 @@
-body {
-	width:100%;
-	height: 400px;
-	background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png), url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(30,75,115,1),rgba(255,255,255,0));
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position: bottom right,left, right;
+.bgSizeContain {
+    height: 200px;
+    background-image: url(https://mdn.mozillademos.org/files/8971/firefox_logo.png);
+    background-size: contain;
+    border: 2px solid darkgray;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff;
 }
