@@ -1,8 +1,8 @@
-.bgSizeContain {
-    height: 200px;
-    background-image: url(https://mdn.mozillademos.org/files/8971/firefox_logo.png);
-    background-size: contain;
-    border: 2px solid darkgray;
-    color: #000;
-    text-shadow: 1px 1px 0 #fff;
+body {
+    counter-reset: section;
+}
+
+h3:before {
+    counter-increment: section;
+    content: counter(section)" "
 }
