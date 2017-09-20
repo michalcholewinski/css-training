@@ -1,40 +1,23 @@
-#col {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+
+.flex {
+    width: 350px;
+    height: 200px;
+    border: 1px solid #555;
+    font: 14px Arial;
+    display: flex;
+    flex-direction: row;
 }
 
-#wid {
-    -moz-column-width: 100px;
-    -webkit-column-width: 100px;
-    column-width: 100px;
+.flex > div {
+    flex: 1 1 auto;
+    width: 30px;
+    transition: width 0.7s ease-out;
 }
 
-#col_short {
-    -moz-column-width: 12em;
-    -moz-columns: 12em;
-    -webkit-columns: 12em;
-    columns: 12em;
-}
+.flex > div:nth-child(1){ background: #009246}
+.flex > div:nth-child(2){ background: #F1F1F1}
+.flex > div:nth-child(3){ background: #CE2B37}
 
-#columns_4 {
-    -moz-column-count: 4;
-    -moz-columns: 4;
-    -webkit-columns: 4;
-    columns: 4;
-}
-
-#columns_12 {
-    -moz-columns: 12 8em;
-    -webkit-columns: 12 8em;
-    columns: 12 8em;
-}
-
-#column_gap {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
-    -moz-column-gap: 2em;
-    -webkit-column-gap: 2em;
-    column-gap: 2em;
+.flex > div:hover {
+    width: 200px;
 }
